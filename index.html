@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevConnect | Front-End Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">PortFolio</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div id="scroll-progress"></div>
+
+
+
+  <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm <span class="highlight">Rahul Kamble</span></h1>
+      <p>Front-End Developer passionate about building modern, responsive websites.</p>
+      <a href="certs/resumeWD.pdf" target="_blank" rel="noopener noreferrer" download class="btn">Download Resume</a>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>A personal portfolio built using HTML, CSS, and JavaScript.</p>
+        <a href="#">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>To-Do App</h3>
+        <p>A simple to-do list application with task add/remove and localStorage.</p>
+        <a href="#">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Weather App</h3>
+        <p>Displays real-time weather using OpenWeatherMap API.</p>
+        <a href="#">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Responsive Design</div>
+      <div class="skill">Git & GitHub</div>
+      <div class="skill">Basic React</div>
+    </div>
+  </section>
+  
+
+  <!-- Certificate Section -->
+<section id="certificates" class="section">
+    <h2 class="section-title">Certificates</h2>
+    <div class="projects-grid">
+  
+      <div class="project-card">
+        <h3>Google Hack4Change</h3>
+        <p>Certificate from Hyderabad Hackathon</p>
+        <button class="btn" onclick="openCertificateModal('certs/Hack4Change-Google.png')">View Certificate</button>
+      </div>
+  
+      <div class="project-card">
+        <h3>Machine Learning with Python</h3>
+        <p>Completed from Great Learning</p>
+        <button class="btn" onclick="openCertificateModal('certs/ml-python.png')">View Certificate</button>
+      </div>
+  
+      <div class="project-card">
+        <h3>IIT Bombay Spoken Tutorials</h3>
+        <p>HTML</p>
+        <button class="btn" onclick="openCertificateModal('certs/ST-IIT-Bombay-HTML.jpg')">View Certificate</button>
+      </div>
+  
+    </div>
+  </section>
+  
+  <!-- Certificate Preview Modal -->
+  <div id="certificateModal" class="modal">
+    <span class="close" onclick="closeCertificateModal()">&times;</span>
+    <img class="modal-content" id="certificateImage">
+  </div>
+  
+  
+  <!-- Contact Section -->
+  <section id="contact" class="section contact">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/mnndyqay" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 DevConnect. All rights reserved.</p>
+    <div class="socials">
+      <a href="https://github.com/yourusername" target="_blank">GitHub</a> |
+      <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+    </div>
+  </footer>
+
+  <!-- Particles.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+
+  <script src="script.js"></script>
+  <script src="particles.js"></script>
+</body>
+</html>
